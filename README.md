@@ -34,6 +34,7 @@ Response Body : id, title, content, author, createAT, ModifiedAt
 Status Code : 200 OK
 
 5. 일정 삭제
+
 Method : DELETE
 URL : api/schedules/{scheduleID}
 Path Variable : scheduleID
