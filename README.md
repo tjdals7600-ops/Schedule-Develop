@@ -49,16 +49,16 @@ Status Code : 204 No Content
 
 Method : POST
 URL : api/users
-Request Body : author , email
-Response Body : id, author, email, createdAt, ModifiedAt
+Request Body : username , email
+Response Body : id, username, email, createdAt, ModifiedAt
 Status Code : 201 CREATE
 
 2. 회원 조회 (전체)
 
 Method : GET
 URL : api/users
-Query Parameter : author
-Response Body : 회원 배열 (id, author, email, createdAt, ModifiedAt)
+Query Parameter : username
+Response Body : 회원 배열 (id, username, email, createdAt, ModifiedAt)
 Status Code : 200 OK
 
 3. 회원 조회 (선택)
@@ -66,7 +66,7 @@ Status Code : 200 OK
 Method : GET
 URL : api/user/{userID}
 Path Variable : userID
-Response Body : id, author, email, createAt, ModifiedAt
+Response Body : id, username, email, createAt, ModifiedAt
 Status Code : 200 OK
 
 4. 회원 수정
@@ -74,8 +74,8 @@ Status Code : 200 OK
 Method : PATCH
 URL : api/user/{userID}
 Path Variable : userID
-Request Body : author, email
-Response Body : id, author, email, createAT, ModifiedAt
+Request Body : username, email
+Response Body : id, username, email, createAT, ModifiedAt
 Status Code : 200 OK
 
 5. 회원 삭제
